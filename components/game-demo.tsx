@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Heart, Shield, Zap } from "lucide-react"
-// import Image from "next/image"
+import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -156,13 +156,13 @@ export default function GameDemo() {
           <div className="text-center">
             <h3 className="text-xl font-bold">{monster.name}</h3>
             <div className="my-4 flex justify-center">
-              {/* <Image
-                src={monster.image || "/placeholder.svg"}
+              <Image
+                src="/AnxietyMonster.webp"
                 alt={monster.name}
-                width={160}
-                height={160}
+                width={280}
+                height={280}
                 className="rounded-lg object-cover"
-              /> */}
+              />
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-between">

@@ -1,11 +1,12 @@
 import Link from "next/link"
 import { ArrowRight, Brain, Heart, Leaf, Shield, Zap } from "lucide-react"
-// import Image from "next/image"
+import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 import GameDemo from "@/components/game-demo"
 import FeatureCard from "@/components/feature-card"
 import RoadmapSection from "@/components/roadmap-section"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function HomePage() {
   return (
@@ -36,6 +37,7 @@ export default function HomePage() {
             </nav>
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
+            <ThemeToggle />
             <Button variant="outline">Sign In</Button>
             <Button>Get Started</Button>
           </div>
@@ -63,13 +65,13 @@ export default function HomePage() {
                   <Button variant="outline">Learn More</Button>
                 </div>
               </div>
-              {/* <Image
-                src="/placeholder.svg?height=550&width=800"
+              <Image
+                src="/SoulQuest.webp?height=550&width=800"
                 width={550}
                 height={310}
                 alt="Soul Quest Hero Image"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              /> */}
+              />
             </div>
           </div>
         </section>
